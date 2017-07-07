@@ -3,8 +3,8 @@
 package inspection
 
 import (
-	"safing/network"
-	"safing/network/packet"
+	"github.com/safing/safing-core/network"
+	"github.com/safing/safing-core/network/packet"
 	"sync"
 )
 

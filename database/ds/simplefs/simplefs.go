@@ -23,9 +23,9 @@ import (
 	dsq "github.com/ipfs/go-datastore/query"
 	"github.com/tevino/abool"
 
-	"safing/database/dbutils"
-	"safing/formats/dsd"
-	"safing/log"
+	"github.com/safing/safing-core/database/dbutils"
+	"github.com/safing/safing-core/formats/dsd"
+	"github.com/safing/safing-core/log"
 )
 
 const (

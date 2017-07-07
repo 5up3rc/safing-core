@@ -4,7 +4,7 @@ package taskmanager
 
 import (
 	"container/list"
-	"safing/modules"
+	"github.com/safing/safing-core/modules"
 	"time"
 )
 

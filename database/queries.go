@@ -3,8 +3,8 @@
 package database
 
 import (
-	"safing/formats/dsd"
-	"safing/log"
+	"github.com/safing/safing-core/formats/dsd"
+	"github.com/safing/safing-core/log"
 	"time"
 
 	dsq "github.com/ipfs/go-datastore/query"

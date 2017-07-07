@@ -2,7 +2,7 @@
 
 package interception
 
-import "safing/network/packet"
+import "github.com/safing/safing-core/network/packet"
 
 var Packets chan packet.Packet
 

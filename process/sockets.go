@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"net"
 	"os"
-	"safing/log"
+	"github.com/safing/safing-core/log"
 	"strconv"
 	"strings"
 	"sync"

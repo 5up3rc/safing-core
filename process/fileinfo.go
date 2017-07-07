@@ -3,7 +3,7 @@
 package process
 
 import (
-	"safing/database"
+	"github.com/safing/safing-core/database"
 	"strings"
 	"time"
 

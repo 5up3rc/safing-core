@@ -3,7 +3,7 @@
 package intel
 
 import (
-	"safing/log"
+	"github.com/safing/safing-core/log"
 	"sync"
 
 	"github.com/miekg/dns"

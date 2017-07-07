@@ -4,7 +4,7 @@ package nfqueue
 
 import (
 	"fmt"
-	"safing/network/packet"
+	"github.com/safing/safing-core/network/packet"
 )
 
 var (

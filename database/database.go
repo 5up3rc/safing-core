@@ -12,10 +12,10 @@ import (
 	dsq "github.com/ipfs/go-datastore/query"
 	mount "github.com/ipfs/go-datastore/syncmount"
 
-	"safing/database/ds/channelshim"
-	"safing/database/ds/simplefs"
-	"safing/log"
-	"safing/meta"
+	"github.com/safing/safing-core/database/ds/channelshim"
+	"github.com/safing/safing-core/database/ds/simplefs"
+	"github.com/safing/safing-core/log"
+	"github.com/safing/safing-core/meta"
 )
 
 // TODO: do not let other modules panic, even if database module crashes.

@@ -10,7 +10,7 @@ import (
 	"sync"
 	"syscall"
 
-	"safing/log"
+	"github.com/safing/safing-core/log"
 )
 
 var (

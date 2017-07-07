@@ -9,9 +9,9 @@ import (
 
 	datastore "github.com/ipfs/go-datastore"
 
-	"safing/database"
-	"safing/log"
-	"safing/network/packet"
+	"github.com/safing/safing-core/database"
+	"github.com/safing/safing-core/log"
+	"github.com/safing/safing-core/network/packet"
 )
 
 type FirewallHandler func(pkt packet.Packet, link *Link)

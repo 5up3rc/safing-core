@@ -8,15 +8,15 @@ import (
 	"sync/atomic"
 	"time"
 
-	"safing/configuration"
-	"safing/firewall/inspection"
-	"safing/firewall/interception"
-	"safing/log"
-	"safing/modules"
-	"safing/network"
-	"safing/network/packet"
-	"safing/process"
-	"safing/sheriff"
+	"github.com/safing/safing-core/configuration"
+	"github.com/safing/safing-core/firewall/inspection"
+	"github.com/safing/safing-core/firewall/interception"
+	"github.com/safing/safing-core/log"
+	"github.com/safing/safing-core/modules"
+	"github.com/safing/safing-core/network"
+	"github.com/safing/safing-core/network/packet"
+	"github.com/safing/safing-core/process"
+	"github.com/safing/safing-core/sheriff"
 )
 
 var (

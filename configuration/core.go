@@ -8,9 +8,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"safing/database"
-	"safing/log"
-	"safing/modules"
+	"github.com/safing/safing-core/database"
+	"github.com/safing/safing-core/log"
+	"github.com/safing/safing-core/modules"
 )
 
 // think about:

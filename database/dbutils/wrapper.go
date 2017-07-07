@@ -11,8 +11,8 @@ import (
 
 	"github.com/ipfs/go-datastore"
 
-	"safing/formats/dsd"
-	"safing/formats/varint"
+	"github.com/safing/safing-core/formats/dsd"
+	"github.com/safing/safing-core/formats/varint"
 )
 
 type Wrapper struct {

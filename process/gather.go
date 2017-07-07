@@ -6,8 +6,8 @@ import (
 	"net"
 	"time"
 
-	"safing/log"
-	"safing/network/packet"
+	"github.com/safing/safing-core/log"
+	"github.com/safing/safing-core/network/packet"
 )
 
 const (

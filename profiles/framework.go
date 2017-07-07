@@ -9,7 +9,7 @@ import (
 	"regexp"
 	"strings"
 
-	"safing/log"
+	"github.com/safing/safing-core/log"
 )
 
 type Framework struct {

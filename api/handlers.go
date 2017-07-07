@@ -6,7 +6,7 @@ import (
 	"bytes"
 	"fmt"
 
-	"safing/log"
+	"github.com/safing/safing-core/log"
 
 	"net/http"
 

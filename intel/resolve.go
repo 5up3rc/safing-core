@@ -22,11 +22,11 @@ import (
 	"github.com/miekg/dns"
 	"github.com/tevino/abool"
 
-	"safing/configuration"
-	"safing/database"
-	"safing/log"
-	"safing/network/environment"
-	"safing/network/netutils"
+	"github.com/safing/safing-core/configuration"
+	"github.com/safing/safing-core/database"
+	"github.com/safing/safing-core/log"
+	"github.com/safing/safing-core/network/environment"
+	"github.com/safing/safing-core/network/netutils"
 )
 
 // TODO: make resolver interface for http package

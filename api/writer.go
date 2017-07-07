@@ -5,9 +5,9 @@ package api
 import (
 	"fmt"
 
-	"safing/database"
-	"safing/formats/dsd"
-	"safing/log"
+	"github.com/safing/safing-core/database"
+	"github.com/safing/safing-core/formats/dsd"
+	"github.com/safing/safing-core/log"
 
 	"github.com/gorilla/websocket"
 	"github.com/ipfs/go-datastore"

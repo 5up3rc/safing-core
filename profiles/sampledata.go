@@ -5,7 +5,7 @@ package profiles
 import (
 	ds "github.com/ipfs/go-datastore"
 
-	"safing/database"
+	"github.com/safing/safing-core/database"
 )
 
 func init() {

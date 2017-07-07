@@ -6,7 +6,7 @@ import (
 	"errors"
 	"fmt"
 	"net"
-	"safing/log"
+	"github.com/safing/safing-core/log"
 	"strings"
 	"sync"
 	"time"

@@ -7,7 +7,7 @@ import (
 	"crypto/sha1"
 	"io"
 	"net"
-	"safing/log"
+	"github.com/safing/safing-core/log"
 	"sync"
 	"sync/atomic"
 	"time"

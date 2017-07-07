@@ -18,7 +18,7 @@ import (
 	"time"
 	"unsafe"
 
-	"safing/network/packet"
+	"github.com/safing/safing-core/network/packet"
 )
 
 var queues map[uint16]*nfQueue

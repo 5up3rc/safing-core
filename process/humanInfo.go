@@ -10,7 +10,7 @@ import (
 	"sync"
 	"time"
 
-	"safing/log"
+	"github.com/safing/safing-core/log"
 )
 
 var (

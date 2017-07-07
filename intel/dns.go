@@ -4,7 +4,7 @@ package intel
 
 import (
 	"fmt"
-	"safing/database"
+	"github.com/safing/safing-core/database"
 	"time"
 
 	datastore "github.com/ipfs/go-datastore"

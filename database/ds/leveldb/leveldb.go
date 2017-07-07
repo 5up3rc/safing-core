@@ -3,7 +3,7 @@
 package leveldb
 
 import (
-	"safing/formats/dsd"
+	"github.com/safing/safing-core/formats/dsd"
 
 	ds "github.com/ipfs/go-datastore"
 	dsq "github.com/ipfs/go-datastore/query"

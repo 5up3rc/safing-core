@@ -5,7 +5,7 @@ package database
 import (
 	"errors"
 	"fmt"
-	"safing/log"
+	"github.com/safing/safing-core/log"
 	"strings"
 
 	dsq "github.com/ipfs/go-datastore/query"

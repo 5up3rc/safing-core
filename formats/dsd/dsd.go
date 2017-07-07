@@ -12,7 +12,7 @@ import (
 
 	"github.com/pkg/bson"
 
-	"safing/formats/varint"
+	"github.com/safing/safing-core/formats/varint"
 )
 
 // define types

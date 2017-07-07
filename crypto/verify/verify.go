@@ -8,9 +8,9 @@ import (
 	"fmt"
 	"time"
 
-	"safing/configuration"
-	"safing/crypto/hash"
-	"safing/database"
+	"github.com/safing/safing-core/configuration"
+	"github.com/safing/safing-core/crypto/hash"
+	"github.com/safing/safing-core/database"
 )
 
 // useful references:

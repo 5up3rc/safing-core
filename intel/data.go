@@ -3,7 +3,7 @@
 package intel
 
 import (
-	"safing/database"
+	"github.com/safing/safing-core/database"
 
 	datastore "github.com/ipfs/go-datastore"
 )

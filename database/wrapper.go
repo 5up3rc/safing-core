@@ -5,7 +5,7 @@ package database
 import (
 	"github.com/ipfs/go-datastore"
 
-	"safing/database/dbutils"
+	"github.com/safing/safing-core/database/dbutils"
 )
 
 func NewWrapper(key *datastore.Key, data *[]byte) (*dbutils.Wrapper, error) {

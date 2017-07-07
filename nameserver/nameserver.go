@@ -7,14 +7,14 @@ import (
 
 	"github.com/miekg/dns"
 
-	"safing/analytics/algs"
-	"safing/intel"
-	"safing/log"
-	"safing/modules"
-	"safing/network"
-	"safing/network/netutils"
-	"safing/process"
-	"safing/sheriff"
+	"github.com/safing/safing-core/analytics/algs"
+	"github.com/safing/safing-core/intel"
+	"github.com/safing/safing-core/log"
+	"github.com/safing/safing-core/modules"
+	"github.com/safing/safing-core/network"
+	"github.com/safing/safing-core/network/netutils"
+	"github.com/safing/safing-core/process"
+	"github.com/safing/safing-core/sheriff"
 )
 
 var (

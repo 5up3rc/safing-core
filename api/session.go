@@ -11,8 +11,8 @@ import (
 	"github.com/ipfs/go-datastore"
 	uuid "github.com/satori/go.uuid"
 
-	"safing/database"
-	"safing/log"
+	"github.com/safing/safing-core/database"
+	"github.com/safing/safing-core/log"
 )
 
 // Session holds data for an api session.

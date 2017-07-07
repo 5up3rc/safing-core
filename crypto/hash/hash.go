@@ -10,7 +10,7 @@ import (
 	"fmt"
 	"io"
 
-	"safing/formats/varint"
+	"github.com/safing/safing-core/formats/varint"
 )
 
 type Hash struct {

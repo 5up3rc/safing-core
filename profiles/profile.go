@@ -9,9 +9,9 @@ import (
 	datastore "github.com/ipfs/go-datastore"
 	dsq "github.com/ipfs/go-datastore/query"
 
-	"safing/database"
-	"safing/intel"
-	"safing/log"
+	"github.com/safing/safing-core/database"
+	"github.com/safing/safing-core/intel"
+	"github.com/safing/safing-core/log"
 )
 
 // Profile is used to predefine a security profile for applications.

@@ -16,9 +16,9 @@ import (
 
 	datastore "github.com/ipfs/go-datastore"
 
-	"safing/crypto/hash"
-	"safing/database"
-	"safing/log"
+	"github.com/safing/safing-core/crypto/hash"
+	"github.com/safing/safing-core/database"
+	"github.com/safing/safing-core/log"
 )
 
 // CARevocationInfo saves Information on revokation of Certificates of a Certificate Authority.

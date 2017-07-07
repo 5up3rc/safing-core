@@ -3,8 +3,8 @@
 package intel
 
 import (
-	"safing/database"
-	"safing/modules"
+	"github.com/safing/safing-core/database"
+	"github.com/safing/safing-core/modules"
 
 	"github.com/miekg/dns"
 )

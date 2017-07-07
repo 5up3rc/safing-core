@@ -4,7 +4,7 @@ package log
 
 import (
 	"fmt"
-	"safing/taskmanager"
+	"github.com/safing/safing-core/taskmanager"
 	"time"
 )
 

@@ -6,7 +6,7 @@ import (
 	"bufio"
 	"fmt"
 	"os"
-	"safing/log"
+	"github.com/safing/safing-core/log"
 	"strconv"
 	"strings"
 )

@@ -5,12 +5,12 @@ package sheriff
 import (
 	"net"
 	"os"
-	"safing/intel"
-	"safing/log"
-	"safing/network"
-	"safing/network/netutils"
-	"safing/network/packet"
-	"safing/profiles"
+	"github.com/safing/safing-core/intel"
+	"github.com/safing/safing-core/log"
+	"github.com/safing/safing-core/network"
+	"github.com/safing/safing-core/network/netutils"
+	"github.com/safing/safing-core/network/packet"
+	"github.com/safing/safing-core/profiles"
 	"strings"
 
 	"github.com/agext/levenshtein"

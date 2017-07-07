@@ -13,9 +13,9 @@ import (
 	"syscall"
 	"time"
 
-	"safing/api"
-	"safing/log"
-	"safing/modules"
+	"github.com/safing/safing-core/api"
+	"github.com/safing/safing-core/log"
+	"github.com/safing/safing-core/modules"
 )
 
 func main() {
