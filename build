@@ -53,4 +53,7 @@ echo "This information is useful for debugging and license compliance."
 echo "Run the compiled binary with the -v flag to see the information included."
 
 # build
-go build -ldflags "-X safing/meta.commit=${BUILD_COMMIT} -X safing/meta.buildOptions=${BUILD_BUILDOPTIONS} -X safing/meta.buildUser=${BUILD_USER} -X safing/meta.buildHost=${BUILD_HOST} -X safing/meta.buildDate=${BUILD_DATE} -X safing/meta.buildSource=${BUILD_SOURCE}" $*
+if [[ "$BUILD_PATH" == "" ]]; then
+  BUILD_PATH=$(go list)
+fi
+go build -ldflags "-X ${BUILD_PATH}/meta.commit=${BUILD_COMMIT} -X ${BUILD_PATH}/meta.buildOptions=${BUILD_BUILDOPTIONS} -X ${BUILD_PATH}/meta.buildUser=${BUILD_USER} -X ${BUILD_PATH}/meta.buildHost=${BUILD_HOST} -X ${BUILD_PATH}/meta.buildDate=${BUILD_DATE} -X ${BUILD_PATH}/meta.buildSource=${BUILD_SOURCE}" $*
