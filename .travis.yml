@@ -1,11 +1,12 @@
 language: go
 go: 1.8
 go_import_path: github.com/safing/safing-core
-install:
-  - go get golang.org/x/crypto/chacha20poly1305
-  - go get golang.org/x/net/icmp
+dist: trusty
 addons:
   apt:
     packages:
-    - libnetfilter-queue-dev
+      - libnetfilter-queue-dev
+install:
+  - go get golang.org/x/crypto/chacha20poly1305
+  - go get golang.org/x/net/icmp
 script: ./test
