@@ -7,4 +7,6 @@ addons:
   apt:
     packages:
     - libnetfilter-queue-dev
+before_script:
+  - ln -s /home/travis/gopath/src/github.com/Safing /home/travis/gopath/src/github.com/safing
 script: ./test
