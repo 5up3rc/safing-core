@@ -1,3 +1,7 @@
+[![Travis](https://img.shields.io/travis/Safing/safing-core.svg?style=flat-square)](https://travis-ci.org/Safing/safing-core)
+[![Coveralls](https://img.shields.io/coveralls/Safing/safing-core.svg?branch=master&style=flat-square)](https://coveralls.io/github/Safing/safing-core?branch=master)
+[![Go Report Card](https://goreportcard.com/badge/github.com/Safing/safing-core?style=flat-square)](https://goreportcard.com/report/github.com/Safing/safing-core)
+
 # Safing Core
 
 Safing aims to protect your privacy online. Safing is a software that you install on your device and will control the network traffic to stop communication of apps that hurt your privacy.  
