@@ -6,7 +6,7 @@
 // #define __USE_BSD
 #include <stdlib.h>
 #include <sys/socket.h>
-#include <netinet/in.h>
+// #include <netinet/in.h>
 #include <arpa/inet.h>
 #include <linux/ip.h>
 #include <linux/tcp.h>
