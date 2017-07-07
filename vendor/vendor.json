@@ -15,6 +15,12 @@
 			"revisionTime": "2017-05-31T23:00:13Z"
 		},
 		{
+			"checksumSHA1": "SDIsVLJx0srCKTwybIHIWlBSpMM=",
+			"path": "github.com/cloudflare/cfssl/errors",
+			"revision": "851e4b77bb0e13a97e7d836a2f069d17ed5478c1",
+			"revisionTime": "2017-04-06T22:23:28Z"
+		},
+		{
 			"checksumSHA1": "8s6lHDs2cnGicy0zrJW4ybIYtgI=",
 			"path": "github.com/coreos/go-iptables/iptables",
 			"revision": "5463fbac3bcc6b990663941c2e12660d19f6b36d",
@@ -249,5 +255,5 @@
 			"revisionTime": "2016-11-15T19:38:03Z"
 		}
 	],
-	"rootPath": "safing"
+	"rootPath": "github.com/safing/safing-core"
 }
