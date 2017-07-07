@@ -183,7 +183,7 @@ func getNameserversFromResolvconf() ([]Nameserver, error) {
 	var nameservers []Nameserver
 	for _, server := range servers {
 		nameservers = append(nameservers, Nameserver{
-			IP: server,
+			IP:     server,
 			Search: searchDomains,
 		})
 	}

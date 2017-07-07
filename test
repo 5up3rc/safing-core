@@ -1,3 +1,10 @@
 #!/bin/bash
 
-go test -tags nonroottests $(go list ./... | grep -v /vendor/ | grep -v "safing-core$") -cover
+if [[ "$1" == "all" ]]; then
+  go test -tags "desktop" $(go list ./... | grep -v /vendor/ | grep -v "safing-core$") -cover # default
+  go test -tags "server" $(go list ./... | grep -v /vendor/ | grep -v "safing-core$") -cover
+  go test -tags "root desktop" $(go list ./... | grep -v /vendor/ | grep -v "safing-core$") -cover
+  go test -tags "root server" $(go list ./... | grep -v /vendor/ | grep -v "safing-core$") -cover
+else
+  go test -tags "$*" $(go list ./... | grep -v /vendor/ | grep -v "safing-core$") -cover
+fi

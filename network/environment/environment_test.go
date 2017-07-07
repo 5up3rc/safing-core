@@ -9,13 +9,7 @@ func TestEnvironment(t *testing.T) {
 	connectivityTest := Connectivity()
 	t.Logf("connectivity: %v", connectivityTest)
 
-	nameserversTest, err := getNameserversFromDbus()
-	if err != nil {
-		t.Errorf("failed to get namerservers from dbus: %s", err)
-	}
-	t.Logf("nameservers from dbus: %v", nameserversTest)
-
-	nameserversTest, err = getNameserversFromResolvconf()
+	nameserversTest, err := getNameserversFromResolvconf()
 	if err != nil {
 		t.Errorf("failed to get namerservers from resolvconf: %s", err)
 	}

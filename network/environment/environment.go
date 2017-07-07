@@ -7,10 +7,11 @@ import (
 	"crypto/sha1"
 	"io"
 	"net"
-	"github.com/safing/safing-core/log"
 	"sync"
 	"sync/atomic"
 	"time"
+
+	"github.com/safing/safing-core/log"
 )
 
 // TODO: find a good way to identify a network
