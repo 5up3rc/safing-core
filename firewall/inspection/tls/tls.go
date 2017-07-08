@@ -12,14 +12,14 @@ import (
 	"github.com/google/gopacket/layers"
 	"github.com/google/gopacket/tcpassembly"
 
-	"github.com/safing/safing-core/configuration"
-	"github.com/safing/safing-core/crypto/verify"
-	"github.com/safing/safing-core/firewall/inspection"
-	"github.com/safing/safing-core/firewall/inspection/tls/tlslib"
-	"github.com/safing/safing-core/log"
-	"github.com/safing/safing-core/network"
-	"github.com/safing/safing-core/network/netutils"
-	"github.com/safing/safing-core/network/packet"
+	"github.com/Safing/safing-core/configuration"
+	"github.com/Safing/safing-core/crypto/verify"
+	"github.com/Safing/safing-core/firewall/inspection"
+	"github.com/Safing/safing-core/firewall/inspection/tls/tlslib"
+	"github.com/Safing/safing-core/log"
+	"github.com/Safing/safing-core/network"
+	"github.com/Safing/safing-core/network/netutils"
+	"github.com/Safing/safing-core/network/packet"
 )
 
 // TODO:

@@ -12,8 +12,8 @@ import (
 
 	"github.com/miekg/dns"
 
-	"github.com/safing/safing-core/log"
-	"github.com/safing/safing-core/network/netutils"
+	"github.com/Safing/safing-core/log"
+	"github.com/Safing/safing-core/network/netutils"
 )
 
 // Gateways returns the currently active gateways

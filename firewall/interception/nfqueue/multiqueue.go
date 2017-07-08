@@ -3,7 +3,7 @@
 package nfqueue
 
 import (
-	"github.com/safing/safing-core/network/packet"
+	"github.com/Safing/safing-core/network/packet"
 	"sync"
 )
 

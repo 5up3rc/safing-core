@@ -8,7 +8,7 @@ import (
 	"log"
 	"net"
 	"os"
-	"github.com/safing/safing-core/network/netutils"
+	"github.com/Safing/safing-core/network/netutils"
 	"time"
 
 	"golang.org/x/net/icmp"

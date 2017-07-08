@@ -4,7 +4,7 @@ package taskmanager
 
 import (
 	"container/list"
-	"github.com/safing/safing-core/modules"
+	"github.com/Safing/safing-core/modules"
 	"time"
 
 	"github.com/tevino/abool"

@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/safing/safing-core/log"
+	"github.com/Safing/safing-core/log"
 )
 
 func Logger(inner http.Handler, name string) http.Handler {

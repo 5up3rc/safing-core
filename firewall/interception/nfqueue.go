@@ -10,9 +10,9 @@ import (
 
 	"github.com/coreos/go-iptables/iptables"
 
-	"github.com/safing/safing-core/firewall/interception/nfqueue"
-	"github.com/safing/safing-core/log"
-	"github.com/safing/safing-core/modules"
+	"github.com/Safing/safing-core/firewall/interception/nfqueue"
+	"github.com/Safing/safing-core/log"
+	"github.com/Safing/safing-core/modules"
 )
 
 // iptables -A OUTPUT -p icmp -j", "NFQUEUE", "--queue-num", "1", "--queue-bypass

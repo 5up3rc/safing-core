@@ -5,7 +5,7 @@ package database
 import (
 	"testing"
 
-	"github.com/safing/safing-core/formats/dsd"
+	"github.com/Safing/safing-core/formats/dsd"
 )
 
 func TestWrapper(t *testing.T) {

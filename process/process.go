@@ -13,9 +13,9 @@ import (
 
 	datastore "github.com/ipfs/go-datastore"
 
-	"github.com/safing/safing-core/database"
-	"github.com/safing/safing-core/log"
-	"github.com/safing/safing-core/profiles"
+	"github.com/Safing/safing-core/database"
+	"github.com/Safing/safing-core/log"
+	"github.com/Safing/safing-core/profiles"
 )
 
 // A Process represents a process running on the operating system

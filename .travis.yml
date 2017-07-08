@@ -2,7 +2,6 @@ dist: trusty
 language: go
 go:
   - tip
-go_import_path: github.com/safing/safing-core
 addons:
   apt:
     packages:

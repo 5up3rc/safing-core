@@ -16,8 +16,8 @@ import (
 
 	"golang.org/x/crypto/ocsp"
 
-	"github.com/safing/safing-core/crypto/hash"
-	"github.com/safing/safing-core/log"
+	"github.com/Safing/safing-core/crypto/hash"
+	"github.com/Safing/safing-core/log"
 )
 
 var (

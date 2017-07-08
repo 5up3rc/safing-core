@@ -7,8 +7,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/safing/safing-core/modules"
-	"github.com/safing/safing-core/taskmanager"
+	"github.com/Safing/safing-core/modules"
+	"github.com/Safing/safing-core/taskmanager"
 
 	"github.com/ipfs/go-datastore"
 	"github.com/tevino/abool"

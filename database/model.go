@@ -9,8 +9,8 @@ import (
 
 	"github.com/ipfs/go-datastore"
 
-	"github.com/safing/safing-core/database/dbutils"
-	"github.com/safing/safing-core/formats/dsd"
+	"github.com/Safing/safing-core/database/dbutils"
+	"github.com/Safing/safing-core/formats/dsd"
 )
 
 type Model interface {

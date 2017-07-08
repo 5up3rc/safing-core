@@ -4,7 +4,7 @@ package database
 
 import (
 	"errors"
-	"github.com/safing/safing-core/database/dbutils"
+	"github.com/Safing/safing-core/database/dbutils"
 	"strings"
 
 	"github.com/ipfs/go-datastore"

@@ -3,7 +3,7 @@
 package taskmanager
 
 import (
-	"github.com/safing/safing-core/modules"
+	"github.com/Safing/safing-core/modules"
 	"sync/atomic"
 	"time"
 

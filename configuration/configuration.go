@@ -3,7 +3,7 @@
 package configuration
 
 import (
-	"github.com/safing/safing-core/database"
+	"github.com/Safing/safing-core/database"
 	"sync/atomic"
 
 	datastore "github.com/ipfs/go-datastore"

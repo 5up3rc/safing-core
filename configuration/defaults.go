@@ -3,7 +3,7 @@
 package configuration
 
 import (
-	"github.com/safing/safing-core/log"
+	"github.com/Safing/safing-core/log"
 )
 
 var (

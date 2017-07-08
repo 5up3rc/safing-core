@@ -13,10 +13,10 @@ import (
 	"syscall"
 	"time"
 
-	_ "github.com/safing/safing-core/configuration"
-	"github.com/safing/safing-core/log"
-	"github.com/safing/safing-core/modules"
-	"github.com/safing/safing-core/nameserver"
+	_ "github.com/Safing/safing-core/configuration"
+	"github.com/Safing/safing-core/log"
+	"github.com/Safing/safing-core/modules"
+	"github.com/Safing/safing-core/nameserver"
 )
 
 func main() {

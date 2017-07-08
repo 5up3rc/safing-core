@@ -11,8 +11,8 @@ import (
 
 	"github.com/tevino/abool"
 
-	"github.com/safing/safing-core/meta"
-	"github.com/safing/safing-core/modules"
+	"github.com/Safing/safing-core/meta"
+	"github.com/Safing/safing-core/modules"
 )
 
 // concept

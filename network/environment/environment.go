@@ -11,7 +11,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/safing/safing-core/log"
+	"github.com/Safing/safing-core/log"
 )
 
 // TODO: find a good way to identify a network

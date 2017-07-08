@@ -16,8 +16,8 @@ import (
 	"github.com/cloudflare/cfssl/crypto/pkcs7"
 	datastore "github.com/ipfs/go-datastore"
 
-	"github.com/safing/safing-core/crypto/hash"
-	"github.com/safing/safing-core/database"
+	"github.com/Safing/safing-core/crypto/hash"
+	"github.com/Safing/safing-core/database"
 )
 
 // Cert saves a certificate.
