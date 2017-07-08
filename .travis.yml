@@ -12,7 +12,7 @@ install:
 - go get github.com/mattn/goveralls
 script:
 - "./test travis-ci"
-- $HOME/gopath/bin/goveralls -coverprofile=profile.cov -service=travis-pro
+- $HOME/gopath/bin/goveralls -coverprofile=profile.cov -service=travis-ci
 env:
   global:
     secure: zUvd5HpwSd8x6JvabiD2HN+vTZL+PAVAchTjxd6/40fnLrI1KTIlC7nImlSU4yL5lZvXXJuN1NjL7Ks+ULHMEOWksQG+YGqbNE9k/rTG7yKbJaZsWP0N3FteQUM328HLI2VOsKNq3tQbD3qCNN3dw8YDwbZqWkZJRR9/aRktXHI7e1uf9q32oIHVbC6ximQxDCgDxhkDruUEhcOkCipv8Sow32SZIYULZ7QFmS6SqjwLoL6TS+GsuoYD7dAe4czIJCPMcRGwSuFjlUIx10yO1cK7mIxfuYqsb7gL0Ga5LL8bex/sobyTvnUmmvCX1ZgdM+nvtrIU+JhK1IkJ6DOU6ZEXi7VpmHPgq4avgWpOUmBA9G23qyhFfnSWTO8GBT7m9gQ4xVzkO4DGdhkFx8b8pNR2cNicL/nUJtmsXnd+DkZX2lD+hHao6PGBlXTSgVWXk+TwV4+LFxXJq/naViL9WpRerxgOXDUX+AoVVp1sJaQUtvMOn+2kMhB2W9VpjCX4jvM9vNJqYdNov2ixSF/YVqTefxKKSEvn0UOb3ZQTOt8wrtlbwsJOgwT8kG8OO+qnjB/t1VE5wGdNDO07yG16tt9RDlMnds+LZGcDM8JiBKFVJWgGLjB2+E52RSPB+QlsybILfuHr+M2Ah3+jYyTKsg5GSyfhx8YwXA4sprhtsWM=
