@@ -11,7 +11,7 @@ if [[ "$1" == "all" ]]; then
   go test -tags "root desktop" $(go list ./... | grep -v /vendor/ | grep -v "safing-core$") -cover
   go test -tags "root server" $(go list ./... | grep -v /vendor/ | grep -v "safing-core$") -cover
 elif [[ "$1" == "travis-ci" ]]; then
-  echo 'mode: atomic' > profile.cov && go list ./... | grep -v /vendor/ | grep -v "safing-core$" | xargs -n1 -I{} sh -c 'go test -tags server -covermode=atomic -coverprofile=profile.tmp {} && tail -n +2 profile.tmp >> profile.cov' && rm profile.tmp
+  echo 'mode: atomic' > profile.cov && go list ./... | grep -v /vendor/ | grep -v /tlslib | grep -v "safing-core$" | xargs -n1 -I{} sh -c 'go test -tags server -covermode=atomic -coverprofile=profile.tmp {} && tail -n +2 profile.tmp >> profile.cov' && rm profile.tmp
 else
   go test -tags "$*" $(go list ./... | grep -v /vendor/ | grep -v "safing-core$") -cover
 fi
