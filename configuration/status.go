@@ -13,7 +13,8 @@ type SystemStatus struct {
 	database.Base
 	CurrentSecurityLevel  int8
 	SelectedSecurityLevel int8
-	ReasonForLevelChange  string `json:",omitempty" bson:",omitempty"`
+	ThreatLevel           int8   `json:",omitempty" bson:",omitempty"`
+	ThreatReason          string `json:",omitempty" bson:",omitempty"`
 }
 
 var (
