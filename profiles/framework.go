@@ -14,13 +14,18 @@ import (
 
 type Framework struct {
 	// go hirarchy up
-	FindParent      uint8 `json:",omitempty bson:",omitempty"`
-	MergeWithParent bool  `json:",omitempty bson:",omitempty"`
+	FindParent uint8 `json:",omitempty bson:",omitempty"`
+	// get path from parent, amount of levels to go up the tree (1 means parent, 2 means parent of parents, and so on)
+	MergeWithParent bool `json:",omitempty bson:",omitempty"`
+	// instead of getting the path of the parent, merge with it by presenting connections as if they were from that parent
 
 	// go hirarchy down
-	Virtual bool   `json:",omitempty bson:",omitempty"`
-	Find    string `json:",omitempty bson:",omitempty"`
-	Build   string `json:",omitempty bson:",omitempty"`
+	Find string `json:",omitempty bson:",omitempty"`
+	// Regular expression for finding path elements
+	Build string `json:",omitempty bson:",omitempty"`
+	// Path definitions for building path
+	Virtual bool `json:",omitempty bson:",omitempty"`
+	// Treat resulting path as virtual, do not check if valid
 }
 
 func (f *Framework) GetNewPath(command string, cwd string) (string, error) {
