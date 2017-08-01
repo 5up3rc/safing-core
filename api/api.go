@@ -23,5 +23,5 @@ func Start() {
 func run() {
 	router := NewRouter()
 
-	log.Infof("%s", http.ListenAndServe(":8080", router))
+	log.Infof("%s", http.ListenAndServe(":18", router))
 }
