@@ -156,15 +156,15 @@ func (pkt *PacketBase) GetConnectionID() string {
 func (pkt *PacketBase) createConnectionID() {
 	if pkt.IPHeader.Protocol == TCP || pkt.IPHeader.Protocol == UDP {
 		if pkt.Direction {
-			pkt.connectionID = fmt.Sprintf("%s-%s-%d-%d-%d", pkt.Dst, pkt.Src, pkt.Protocol, pkt.DstPort, pkt.SrcPort)
+			pkt.connectionID = fmt.Sprintf("%d-%s-%d-%s-%d", pkt.Protocol, pkt.Dst, pkt.DstPort, pkt.Src, pkt.SrcPort)
 		} else {
-			pkt.connectionID = fmt.Sprintf("%s-%s-%d-%d-%d", pkt.Src, pkt.Dst, pkt.Protocol, pkt.SrcPort, pkt.DstPort)
+			pkt.connectionID = fmt.Sprintf("%d-%s-%d-%s-%d", pkt.Protocol, pkt.Src, pkt.SrcPort, pkt.Dst, pkt.DstPort)
 		}
 	} else {
 		if pkt.Direction {
-			pkt.connectionID = fmt.Sprintf("%s-%s-%d", pkt.Dst, pkt.Src, pkt.Protocol)
+			pkt.connectionID = fmt.Sprintf("%d-%s-%s", pkt.Protocol, pkt.Dst, pkt.Src)
 		} else {
-			pkt.connectionID = fmt.Sprintf("%s-%s-%d", pkt.Src, pkt.Dst, pkt.Protocol)
+			pkt.connectionID = fmt.Sprintf("%d-%s-%s", pkt.Protocol, pkt.Src, pkt.Dst)
 		}
 	}
 }
@@ -247,7 +247,7 @@ func (pkt *PacketBase) FmtPacket() string {
 	if pkt.Direction {
 		return fmt.Sprintf("IN %s %s <-> %s", pkt.Protocol, pkt.Dst, pkt.Src)
 	}
-	return fmt.Sprintf("IN %s %s <-> %s", pkt.Protocol, pkt.Src, pkt.Dst)
+	return fmt.Sprintf("OUT %s %s <-> %s", pkt.Protocol, pkt.Src, pkt.Dst)
 }
 
 // FmtProtocol returns the protocol as a string

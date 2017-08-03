@@ -8,11 +8,12 @@ import (
 	"fmt"
 	"net"
 	"os"
-	"github.com/Safing/safing-core/log"
 	"strconv"
 	"strings"
 	"sync"
 	"unicode"
+
+	"github.com/Safing/safing-core/log"
 )
 
 /*
@@ -47,6 +48,19 @@ const (
 	UDP6Data  = "/proc/net/udp6"
 	ICMP4Data = "/proc/net/icmp"
 	ICMP6Data = "/proc/net/icmp6"
+
+	TCP_ESTABLISHED = iota + 1
+	TCP_SYN_SENT
+	TCP_SYN_RECV
+	TCP_FIN_WAIT1
+	TCP_FIN_WAIT2
+	TCP_TIME_WAIT
+	TCP_CLOSE
+	TCP_CLOSE_WAIT
+	TCP_LAST_ACK
+	TCP_LISTEN
+	TCP_CLOSING
+	TCP_NEW_SYN_RECV
 )
 
 var (
@@ -292,4 +306,72 @@ func getListenerMaps(procFile, zeroIP, socketStatusListening string, ipConverter
 	}
 
 	return addressListening, globalListening
+}
+
+func GetActiveConnectionIDs() []string {
+	var connections []string
+
+	connections = append(connections, getConnectionIDsFromSource(TCP4Data, 6, convertIPv4)...)
+	connections = append(connections, getConnectionIDsFromSource(UDP4Data, 17, convertIPv4)...)
+	connections = append(connections, getConnectionIDsFromSource(TCP6Data, 6, convertIPv6)...)
+	connections = append(connections, getConnectionIDsFromSource(UDP6Data, 17, convertIPv6)...)
+
+	return connections
+}
+
+func getConnectionIDsFromSource(source string, protocol uint16, ipConverter func(string) *net.IP) []string {
+	var connections []string
+
+	// open file
+	socketData, err := os.Open(source)
+	if err != nil {
+		log.Warningf("process: could not read %s: %s", source, err)
+		return connections
+	}
+	defer socketData.Close()
+
+	// file scanner
+	scanner := bufio.NewScanner(socketData)
+	scanner.Split(bufio.ScanLines)
+
+	// parse
+	scanner.Scan() // skip first line
+	for scanner.Scan() {
+		line := strings.FieldsFunc(scanner.Text(), procDelimiter)
+		if len(line) < 14 {
+			// log.Tracef("process: too short: %s", line)
+			continue
+		}
+
+		// skip listeners and closed connections
+		if line[5] == "0A" || line[5] == "07" {
+			continue
+		}
+
+		localIP := ipConverter(line[1])
+		if localIP == nil {
+			continue
+		}
+
+		localPort, err := strconv.ParseUint(line[2], 16, 16)
+		if err != nil {
+			log.Warningf("process: could not parse port: %s", err)
+			continue
+		}
+
+		remoteIP := ipConverter(line[3])
+		if remoteIP == nil {
+			continue
+		}
+
+		remotePort, err := strconv.ParseUint(line[4], 16, 16)
+		if err != nil {
+			log.Warningf("process: could not parse port: %s", err)
+			continue
+		}
+
+		connections = append(connections, fmt.Sprintf("%d-%s-%d-%s-%d", protocol, localIP, localPort, remoteIP, remotePort))
+	}
+
+	return connections
 }

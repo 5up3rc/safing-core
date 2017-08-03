@@ -33,4 +33,9 @@ func TestSockets(t *testing.T) {
 	uid, inode, ok := getConnectionSocket(&localIP, 37312, TCP4)
 	log.Printf("getConnectionSocket: %d %d %v", uid, inode, ok)
 
+	activeConnectionIDs := GetActiveConnectionIDs()
+	for _, connID := range activeConnectionIDs {
+		log.Printf("active: %s", connID)
+	}
+
 }
