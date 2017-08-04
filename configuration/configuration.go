@@ -3,8 +3,9 @@
 package configuration
 
 import (
-	"github.com/Safing/safing-core/database"
 	"sync/atomic"
+
+	"github.com/Safing/safing-core/database"
 
 	datastore "github.com/ipfs/go-datastore"
 )
@@ -31,8 +32,8 @@ type Configuration struct {
 	EnforceRevocation               SecurityLevelBoolean `json:",omitempty bson:",omitempty"` // Hardfail on Certificate Revokation
 	DenyInsecureTLS                 SecurityLevelBoolean `json:",omitempty bson:",omitempty"` // Block TLS connections, that use insecure TLS versions, cipher suites, ...
 	DenyTLSWithoutSNI               SecurityLevelBoolean `json:",omitempty bson:",omitempty"` // Block TLS connections that do not use SNI, connections without SNI cannot be verified as well as connections with SNI.
-	DoNotUseAssignedDNS             SecurityLevelBoolean `json:",omitempty bson:",omitempty"` // Do not use DHCP Serverse assigned by DHCP
-	DoNotUseMDNS                    SecurityLevelBoolean `json:",omitempty bson:",omitempty"` // Do not use MDNS
+	DoNotUseAssignedDNS             SecurityLevelBoolean `json:",omitempty bson:",omitempty"` // Do not use DNS Servers assigned by DHCP
+	DoNotUseMDNS                    SecurityLevelBoolean `json:",omitempty bson:",omitempty"` // Do not use mDNS
 	DoNotForwardSpecialDomains      SecurityLevelBoolean `json:",omitempty bson:",omitempty"` // Do not resolve special domains with assigned DNS Servers
 	AlwaysPromptAtNewProfile        SecurityLevelBoolean `json:",omitempty bson:",omitempty"` // Always prompt user to review new profiles
 	DenyNetworkUntilProfileApproved SecurityLevelBoolean `json:",omitempty bson:",omitempty"` // Deny network communication until a new profile is actively approved by the user

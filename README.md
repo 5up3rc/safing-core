@@ -18,14 +18,18 @@ Safing is now in a tech preview phase (v0.0.x), where the first features are com
 ## Download
 
 Currently Safing is only supported on Linux. Windows and Mac will be supported by the end of 2017.
-There is no installer yet, you will have to execute the components you need directly:
-- Core: TODO
-- UI: TODO
-- Notify (Tray Icon): TODO
+We recommend to download a package of all components from [Safing Installer](https://github.com/Safing/safing-installer/releases)
 
-## User Guide
+## Guides
 
-To learn more about how Safing works and how you can use it protect your privacy, please read the [User Guide](#).
+These Guides will help you to get started with Safing:
+
+- [User Guide](https://github.com/Safing/safing-doc/blob/master/guides/UserGuide.md) - Intro to Safing
+- [Admin Guide](https://github.com/Safing/safing-doc/blob/master/guides/AdminGuide.md) - Detailed information about Safing
+- [Code Docs](https://godoc.org/github.com/Safing/safing-core) - For developers
+
+
+- [Feature Matrix](https://github.com/Safing/safing-doc/blob/master/misc/FeatureMatrix.md) - Current implementation status of features
 
 ## Running
 
