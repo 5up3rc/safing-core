@@ -16,7 +16,7 @@ func cleaner() {
 	time.Sleep(15 * time.Second)
 	for {
 		markDeadLinks()
-		purgeDeadFor(5 * time.Minutes)
+		purgeDeadFor(5 * time.Minute)
 		time.Sleep(15 * time.Second)
 	}
 }
