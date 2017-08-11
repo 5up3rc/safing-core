@@ -30,6 +30,7 @@ type Link struct {
 	VerdictPermanent bool
 	Inspect          bool
 	Started          int64
+	Ended            int64
 	connection       *Connection
 	RemoteAddress    string
 	ActiveInspectors []bool                `json:"-" bson:"-"`
