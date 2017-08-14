@@ -13,11 +13,11 @@ func init() {
 }
 
 func cleaner() {
-	time.Sleep(10 * time.Second)
+	time.Sleep(15 * time.Second)
 	for {
 		markDeadLinks()
-		purgeDeadFor(15 * time.Second)
-		time.Sleep(5 * time.Second)
+		purgeDeadFor(5 * time.Minute)
+		time.Sleep(15 * time.Second)
 	}
 }
 
