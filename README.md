@@ -45,6 +45,15 @@ For builds that interact with the operating system, you must start Safing with o
       -flog string
           set log level of files: database=trace,firewall=debug
 
+## Dependencies
+
+#### Linux
+- libnetfilter_queue
+  - debian/ubuntu:  `sudo apt-get install libnetfilter-queue1`
+  - fedora:         `sudo yum install libnetfilter_queue`
+  - arch:           `sudo pacman -S libnetfilter_queue`
+- [Network Manager](https://wiki.gnome.org/Projects/NetworkManager) (for now - should be included with your desktop environment)
+
 ## Developing
 
 Currently Safing is only supported on Linux.  
@@ -58,7 +67,7 @@ Builds without specific os interaction (clientapi.go) may succeed on other syste
         ./build clientapi.go  # builds api service only (for debugging)
         ./build dnsserver.go  # builds nameserver only (no fw)
 
-## Additional Requirements
+### Development Requirements
 
 #### Linux
 
